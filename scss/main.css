@@ -1,0 +1,1170 @@
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f2f2f2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 2rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4f4f4f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 11vh;
+}
+
+nav .logo {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .logo a {
+  color: #000000;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+nav .navigation {
+  z-index: 9999;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .navigation .links {
+  width: 100%;
+  margin-right: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .navigation .links a {
+  text-decoration: none;
+  color: #000000;
+  position: relative;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+nav .navigation .links a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #4f4f4f;
+  top: 115%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+nav .navigation .links a:hover:before {
+  width: 110%;
+  height: 0.12rem;
+}
+
+nav .navigation .links #active:before {
+  width: 110%;
+  height: 0.12rem;
+}
+
+nav .navigation .links #contact-btn {
+  color: #000000;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid #000000;
+  border-radius: 0.6rem;
+  padding: 0.6rem 1.3rem;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+nav .navigation .links #contact-btn:before {
+  width: 0;
+  height: 0;
+}
+
+nav .navigation .links #contact-btn:hover {
+  background-color: #000000;
+  -webkit-box-shadow: 0px 13px 31px 0px rgba(0, 0, 0, 0.36);
+          box-shadow: 0px 13px 31px 0px rgba(0, 0, 0, 0.36);
+  color: #f2f2f2;
+}
+
+nav .navigation .hamMenu {
+  position: absolute;
+  right: 2rem;
+  font-size: 2.3rem;
+  cursor: pointer;
+  display: none;
+  visibility: hidden;
+}
+
+main {
+  width: 100vw;
+  min-height: 89vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .left {
+  margin-left: 4rem;
+}
+
+main .left .lefttext {
+  margin-bottom: 4rem;
+}
+
+main .left .lefttext h1 {
+  font-weight: 300;
+  font-size: calc(2.6vw + 0.5rem);
+}
+
+main .left .lefttext span {
+  font-weight: 800;
+}
+
+main .left .lefttext p {
+  color: #4f4f4f;
+  width: 40vw;
+  font-size: 1.15rem;
+  margin-top: 0.4rem;
+}
+
+@media screen and (max-width: 915px) {
+  main .left .lefttext p {
+    font-size: 0.9rem;
+  }
+}
+
+main .left .leftbuttons {
+  margin-top: 2.5rem;
+}
+
+main .left .leftbuttons a {
+  text-decoration: none;
+  color: #f2f2f2;
+  background-color: #000000;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1.1rem;
+  border: 1.5px solid #000000;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+main .left .leftbuttons a:first-child {
+  -webkit-box-shadow: 0px 13px 31px 0px rgba(0, 0, 0, 0.36);
+          box-shadow: 0px 13px 31px 0px rgba(0, 0, 0, 0.36);
+}
+
+main .left .leftbuttons a:nth-child(2) {
+  background-color: #f2f2f2;
+  color: #000000;
+  margin-left: 1.5rem;
+  border: 1.5px solid #000000;
+}
+
+main .left .leftbuttons a:first-child:hover {
+  background-color: #f2f2f2;
+  -webkit-box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+  color: #000000;
+}
+
+main .left .leftbuttons a:nth-child(2):hover {
+  background-color: #000000;
+  color: #f2f2f2;
+  -webkit-box-shadow: 0px 13px 31px 0px rgba(0, 0, 0, 0.36);
+          box-shadow: 0px 13px 31px 0px rgba(0, 0, 0, 0.36);
+}
+
+main .left .socials {
+  position: absolute;
+  bottom: 2rem;
+}
+
+main .left .socials a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.6rem;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+main .left .socials a:hover {
+  color: #4f4f4f;
+}
+
+main .left .socials a:nth-child(2),
+main .left .socials a:nth-child(3),
+main .left .socials a:nth-child(4) {
+  margin-left: 0.5rem;
+}
+
+main .right {
+  margin-right: 4rem;
+}
+
+main .right .scroll {
+  position: absolute;
+  bottom: 2rem;
+  right: 4rem;
+}
+
+main .right .scroll a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #4f4f4f;
+  font-size: 1.1rem;
+}
+
+main .right .scroll a #mouse {
+  font-size: 1.7rem;
+}
+
+main .right .illustro {
+  margin-bottom: 3rem;
+}
+
+main .right .illustro img {
+  width: 39vw;
+}
+
+.features {
+  width: 100vw;
+  padding: 3rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.features h1 {
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+.features h1 span {
+  font-weight: 800;
+}
+
+.features .main-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.features .main-icons .icons2,
+.features .main-icons .icons3 {
+  margin-left: 10rem;
+}
+
+.features .main-icons .icons .iconify {
+  font-size: 4.3rem;
+}
+
+.features .main-icons .icons p {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.features .btn2 {
+  margin-top: 5rem;
+}
+
+.features .btn2 a {
+  text-decoration: none;
+  color: #f2f2f2;
+  background-color: #000000;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border: 1.5px solid #000000;
+  -webkit-box-shadow: 0px 13px 31px 0px rgba(0, 0, 0, 0.36);
+          box-shadow: 0px 13px 31px 0px rgba(0, 0, 0, 0.36);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.features .btn2 a:hover {
+  color: #000000;
+  background-color: #f2f2f2;
+  -webkit-box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+}
+
+.reviews {
+  width: 100vw;
+  padding: 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reviews h1 {
+  font-size: 2.7rem;
+  font-weight: 200;
+}
+
+.reviews h1 span {
+  font-weight: 800;
+}
+
+.reviews .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4rem;
+}
+
+.reviews .cards .revCard {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(1000px);
+          transform: perspective(1000px);
+  width: 25rem;
+  padding: 3rem 2rem;
+  border-radius: 2.5rem;
+  border: 1px solid #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.reviews .cards .revCard img {
+  width: 10rem;
+  -webkit-transform: translateZ(20px);
+          transform: translateZ(20px);
+}
+
+.reviews .cards .revCard p {
+  margin-top: 2rem;
+  font-style: italic;
+  font-size: 1rem;
+  color: #4f4f4f;
+  -webkit-transform: translateZ(20px);
+          transform: translateZ(20px);
+}
+
+.reviews .cards .revCard #reviewName {
+  font-style: normal;
+  color: #000000;
+}
+
+.reviews .cards .revCard #reviewName span {
+  font-weight: 800;
+}
+
+.reviews .cards .revCard1 {
+  margin-right: 4rem;
+}
+
+.reviews .btn3 {
+  -webkit-transform: translateZ(20px);
+          transform: translateZ(20px);
+  margin-top: 5rem;
+}
+
+.reviews .btn3 a {
+  text-decoration: none;
+  color: #f2f2f2;
+  background-color: #000000;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border: 1.5px solid #000000;
+  -webkit-box-shadow: 0px 13px 31px 0px rgba(0, 0, 0, 0.36);
+          box-shadow: 0px 13px 31px 0px rgba(0, 0, 0, 0.36);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.reviews .btn3 a:hover {
+  color: #000000;
+  background-color: #f2f2f2;
+  -webkit-box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+}
+
+.ordering {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ordering .order-text {
+  text-align: center;
+}
+
+.ordering .order-text h1 {
+  width: 85vw;
+  font-weight: 200;
+  font-size: 2.6rem;
+}
+
+.ordering .order-text h1 span {
+  font-weight: 800;
+}
+
+.ordering .order-text p {
+  color: #4f4f4f;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.ordering .order-text p span {
+  font-weight: 800;
+}
+
+.ordering .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+}
+
+.ordering .buttons .order-btn a {
+  text-decoration: none;
+  color: #f2f2f2;
+  background-color: #000000;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border: 1.5px solid #000000;
+  -webkit-box-shadow: 0px 13px 31px 0px rgba(0, 0, 0, 0.36);
+          box-shadow: 0px 13px 31px 0px rgba(0, 0, 0, 0.36);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.ordering .buttons .order-btn a:hover {
+  color: #000000;
+  background-color: #f2f2f2;
+  -webkit-box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+}
+
+.ordering .buttons .order-btn2 a {
+  color: #000000;
+  background-color: #f2f2f2;
+  -webkit-box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+  margin-left: 2rem;
+}
+
+.ordering .buttons .order-btn2 a:hover {
+  color: #f2f2f2;
+  background-color: #000000;
+  -webkit-box-shadow: 0px 13px 31px 0px rgba(0, 0, 0, 0.36);
+          box-shadow: 0px 13px 31px 0px rgba(0, 0, 0, 0.36);
+}
+
+.ordering .top-arrow {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.ordering .top-arrow a {
+  text-decoration: none;
+  color: #f2f2f2;
+  background-color: #000000;
+  border-radius: 50%;
+  padding: 0.6rem 0.7rem;
+  font-size: 1.8rem;
+  -webkit-box-shadow: 0px 13px 31px 0px rgba(0, 0, 0, 0.36);
+          box-shadow: 0px 13px 31px 0px rgba(0, 0, 0, 0.36);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.ordering .top-arrow a:hover {
+  color: #000000;
+  background-color: #f2f2f2;
+  border: 1.5px solid #000000;
+  -webkit-box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+}
+
+footer {
+  padding: 50px 25px;
+  background-color: #111;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("bg-pattern.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("bg-pattern.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.col-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 25px;
+}
+
+.col-left p {
+  margin: 15px 0 30px;
+}
+
+.social-media-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-media-list li {
+  width: 50px;
+  height: 50px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.social-media-list li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.social-media-list li:hover {
+  background-color: #111;
+}
+
+.social-media-list a {
+  text-decoration: none;
+  color: #111;
+  font-size: 20px;
+}
+
+.social-media-list li:hover a {
+  color: #fff;
+}
+
+.col-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.links-container {
+  list-style: none;
+}
+
+.links-container:not(:last-child) {
+  margin-right: 25px;
+}
+
+.links-container h4 {
+  color: #6fa6ab;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.links-container li {
+  margin-top: 20px;
+}
+
+.links-container a {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.links-container li:hover a {
+  color: #6fa6ab;
+}
+
+@media (max-width: 1024px) {
+  .col-left p,
+  .links-container a {
+    font-size: 15px;
+  }
+  .col-left p br {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .col-left {
+    text-align: center;
+    margin-right: 0;
+  }
+  .social-media-list {
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .col-right {
+    width: 100%;
+    margin: 50px 0 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .col-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .links-container:not(:last-child) {
+    margin: 0 0 50px 0;
+  }
+}
+
+@media (max-width: 352px) {
+  .social-media-list li {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 904px) {
+  .reviews h1 {
+    font-size: 2.5rem;
+  }
+  .reviews .cards .revCard {
+    width: 20rem;
+  }
+  .reviews .cards .revCard img {
+    width: 8rem;
+  }
+  .reviews .cards .revCard p {
+    font-size: 0.9rem;
+  }
+  .ordering .order-text h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  .reviews h1 {
+    font-size: 2.2rem;
+  }
+  .reviews .cards .revCard {
+    width: 18rem;
+  }
+  .reviews .cards .revCard img {
+    width: 8rem;
+  }
+  .reviews .cards .revCard p {
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+  }
+  .ordering .order-text h1 {
+    font-size: 1.9rem;
+  }
+  .ordering .order-text p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 664px) {
+  .reviews h1 {
+    font-size: 2.2rem;
+  }
+  .reviews .cards .revCard1 {
+    margin-right: 2rem;
+  }
+  .reviews .cards .revCard {
+    width: 16rem;
+  }
+  .reviews .cards .revCard img {
+    width: 6rem;
+  }
+  .reviews .cards .revCard p {
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+  }
+  .ordering .order-text h1 {
+    font-size: 1.7rem;
+  }
+  .ordering .order-text p {
+    font-size: 1.1rem;
+  }
+  .ordering .buttons .order-btn a {
+    font-size: 0.9rem;
+  }
+  .ordering .top-arrow a {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reviews h1 {
+    font-size: 1.9rem;
+    width: 94vw;
+    text-align: center;
+  }
+  .reviews .cards .revCard1 {
+    margin-right: 0rem;
+    margin-bottom: 2rem;
+  }
+  .reviews .cards .revCard {
+    width: 20rem;
+  }
+  .reviews .cards .revCard img {
+    width: 8rem;
+  }
+  .reviews .cards .revCard p {
+    margin-top: 1.3rem;
+    font-size: 0.9rem;
+  }
+  .ordering .order-text h1 {
+    width: 85vw;
+    font-size: 1.5rem;
+  }
+  .ordering .order-text p {
+    font-size: 1rem;
+    width: 85vw;
+  }
+  .ordering .buttons .order-btn a {
+    font-size: 0.9rem;
+  }
+  .ordering .top-arrow a {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 464px) {
+  .ordering .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 3rem;
+  }
+  .ordering .buttons .order-btn a {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8rem;
+  }
+  .ordering .buttons .order-btn2 a {
+    margin-left: 1rem;
+  }
+  .ordering .order-text h1 {
+    font-size: 1.4rem;
+  }
+  .ordering .order-text p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .features {
+    padding: 3rem 0rem;
+  }
+  .reviews h1 {
+    font-size: 1.6rem;
+  }
+  .reviews .cards .revCard {
+    padding: 2rem 2rem;
+    width: 14rem;
+  }
+  .reviews .cards .revCard img {
+    width: 5rem;
+  }
+  .reviews .cards .revCard p {
+    margin-top: 1.5rem;
+    font-size: 0.7rem;
+  }
+  .ordering .order-text h1 {
+    font-size: 1.3rem;
+  }
+  .ordering .order-text p {
+    font-size: 0.9rem;
+  }
+  .ordering .buttons .order-btn a {
+    font-size: 0.7rem;
+  }
+  .ordering .top-arrow a {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation .links {
+    display: none;
+    visibility: hidden;
+  }
+  .navigation .links a {
+    font-size: 1.2rem;
+  }
+  .btn1 {
+    display: none;
+    visibility: hidden;
+  }
+  .logo {
+    position: absolute;
+    left: 2rem;
+  }
+  nav .navigation .hamMenu {
+    position: absolute;
+    right: 2rem;
+    font-size: 2.3rem;
+    cursor: pointer;
+    display: block;
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 999;
+  }
+  nav .navigation .resMenu {
+    display: block;
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 25rem;
+    background-color: #e8e8e8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3rem 0;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0 10px 60px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 60px rgba(0, 0, 0, 0.2);
+  }
+  main {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3rem 0;
+    position: relative;
+  }
+  main .left,
+  main .right {
+    margin-left: 0rem;
+  }
+  main .left .lefttext {
+    margin-bottom: 0;
+  }
+  main .left .lefttext h1 {
+    font-size: 4vw;
+    text-align: center;
+  }
+  main .left .lefttext h1 br {
+    display: none;
+  }
+  main .left .lefttext p {
+    width: 80vw;
+    font-size: 1rem;
+  }
+  main .left .lefttext .leftbuttons a {
+    font-size: 0.9rem;
+  }
+  main .left .socials {
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: 0 0;
+  }
+  main .right {
+    margin-right: 0;
+  }
+  main .right .illustro img {
+    width: calc(51vw + 2rem);
+  }
+  main .right .scroll {
+    display: none;
+  }
+  .features h1 {
+    font-size: 2.5rem;
+  }
+  .features .main-icons .icons2,
+  .features .main-icons .icons3 {
+    margin-left: 7rem;
+  }
+  .features .main-icons .icons .iconify {
+    font-size: 3.8rem;
+  }
+  .features .main-icons .icons p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .features .btn2 a {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .features h1 {
+    font-size: 2.3rem;
+  }
+  .features .main-icons .icons2,
+  .features .main-icons .icons3 {
+    margin-left: 4rem;
+  }
+  .features .main-icons .icons .iconify {
+    font-size: 3.5rem;
+  }
+  .features .main-icons .icons p {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  .features .btn2 a {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .features h1 {
+    font-size: 2.2rem;
+  }
+  .features .main-icons .icons2,
+  .features .main-icons .icons3 {
+    margin-left: 2rem;
+  }
+  .features .main-icons .icons .iconify {
+    font-size: 3rem;
+  }
+  .features .main-icons .icons p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+  .features .btn2 a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 524px) {
+  main .left .lefttext h1 {
+    font-size: 6.4vw;
+    text-align: left;
+  }
+  main .left .lefttext h1 br {
+    display: block;
+  }
+  main .left .lefttext p {
+    font-size: 0.9rem;
+  }
+  main .left .lefttext .leftbuttons a {
+    font-size: 0.8rem;
+  }
+  main .right .illustro img {
+    width: calc(54vw + 4rem);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main .left .lefttext p {
+    font-size: 0.8rem;
+  }
+  main .left .socials a {
+    font-size: 1.3rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
