@@ -2,7 +2,7 @@
 ## The WyFy™ Project
 This is a practise project made by [GoUnstoppable®](https://github.com/gounstoppable-exe). This website is a wifi fibre website. This is not a real wifi fibre website as I told you this is a practise project.
 
-  
+[Click here to visit the website](https://wyfyproject.netlify.app)
 ![Website Preview](https://i.ibb.co/rGTyJRR/Screenshot-from-2021-09-13-10-34-55.png)
 
     
